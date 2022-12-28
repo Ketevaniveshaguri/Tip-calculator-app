@@ -1,0 +1,231 @@
+$bp-largest: 75em; //1200
+$bp-large: 60em;
+$bp-medium: 50em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
+@mixin input {
+  width: 37rem;
+  height: 4.8rem;
+  text-align: end;
+  border: none;
+  background-color: #f3f9fa;
+  font-size: 2.4rem;
+  color: #00474b;
+  padding-right: 1.7rem;
+}
+
+@mixin input-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: #fff;
+}
+
+@mixin icon {
+  position: absolute;
+  margin-left: 1.9rem;
+}
+@mixin title {
+  color: #fff;
+  font-size: 1.6rem;
+}
+@mixin subtitle {
+  font-size: 1.6rem;
+  color: #7f9d9f;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+body {
+  max-width: 144rem;
+  font-family: "Space Mono";
+  font-weight: 700;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: hsl(185, 41%, 84%);
+}
+.logo-container {
+  width: 8.7rem;
+  margin: 10rem auto;
+  @media only screen and (max-width: $bp-large) {
+    margin: 4.5rem auto;
+  }
+}
+.card {
+  display: flex;
+  width: 92rem;
+  height: 48rem;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 2.5rem;
+  @media only screen and (max-width: $bp-large) {
+    width: 37.5rem;
+    flex-direction: column;
+    height: 80rem;
+  }
+  &__first-part {
+    margin: 4.8rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 2rem;
+    }
+  }
+  &__bill {
+    font-size: 1.6rem;
+    color: #5e7a7d;
+    margin-bottom: 0.6rem;
+  }
+  &__input-with-dolar-icon {
+    @include input-icon;
+  }
+  &__bill-input {
+    @include input;
+  }
+  &__dolar-icon {
+    @include icon;
+  }
+}
+.select-tip {
+  &__title {
+    margin-top: 4rem;
+    margin-bottom: 1.6rem;
+    color: #5e7a7d;
+    font-size: 1.6rem;
+  }
+  &__inner-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.4rem;
+    margin-bottom: 4rem;
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__percentage {
+    font-size: 2.4rem;
+    text-align: center;
+    width: 11rem;
+    height: 4.8rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #00474b;
+    @media only screen and (max-width: $bp-large) {
+      width: 14rem;
+    }
+  }
+}
+
+.custom-tip-input {
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #f3f9fa;
+  width: 11rem;
+  height: 4.8rem;
+  border: none;
+  @media only screen and (max-width: $bp-large) {
+    width: 14rem;
+  }
+}
+
+.number-of-people {
+  &__title {
+    margin-top: 4rem;
+
+    font-size: 1.6rem;
+    color: #5e7a7d;
+  }
+  &__input-with-icon-person {
+    @include input-icon;
+  }
+  &__value {
+    @include input;
+  }
+  &__icon-person {
+    @include icon;
+  }
+}
+.card2 {
+  &__second-part {
+    background-color: #00474b;
+    width: 41rem;
+    height: 41rem;
+    margin-top: 3.2rem;
+    border-radius: 1.5rem;
+    @media only screen and (max-width: $bp-large) {
+      margin: 0 auto;
+      width: 33rem;
+      height: 25rem;
+    }
+  }
+  &__tip-amount-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5.6rem 4rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 2rem;
+    }
+  }
+  &__title {
+    @include title;
+  }
+  &__sub-title {
+    @include subtitle;
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -2rem 4rem 0 4rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-top: -5rem;
+    }
+  }
+  &__tip-amount-value {
+    font-size: 4.8rem;
+    color: #26c2ae;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 3.2rem;
+    }
+  }
+  &__total-value {
+    font-size: 4.8rem;
+    color: #26c2ae;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 3.2rem;
+    }
+  }
+}
+.active {
+  background: #26c2ae;
+}
+
+.btn-container {
+  position: relative;
+}
+.reset-btn {
+  font-size: 2rem;
+  position: absolute;
+  width: 33rem;
+  height: 4.8rem;
+  margin: 7rem 4rem 0 4rem;
+  color: #00474b;
+  background-color: #26c2ae;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  @media only screen and (max-width: $bp-large) {
+    margin: 3rem 2rem 0 2.5rem;
+    width: 28rem;
+  }
+}

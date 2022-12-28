@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img src="./images/logo.svg" alt="Logo" class="logo" />
+      </div>
+      <div class="card">
+        <div class="card__first-part">
+          <div class="card__bill__container">
+            <p class="card__bill">Bill</p>
+            <div class="card__input-with-dolar-icon">
+              <input class="card__bill-input" type="text" value="142.55" />
+              <img
+                class="card__dolar-icon"
+                src="./images/icon-dollar.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="select-tip">
+            <p class="select-tip__title">Select Tip %</p>
+            <div class="select-tip__inner-container">
+              <div class="select-tip__percentage" data-percentage="5">5%</div>
+              <div class="select-tip__percentage" data-percentage="10">10%</div>
+              <div class="select-tip__percentage active" data-percentage="15">
+                15%
+              </div>
+              <div class="select-tip__percentage" data-percentage="25">25%</div>
+              <div class="select-tip__percentage" data-percentage="50">50%</div>
+              <div class="select-tip__percentage select-tip-custom">
+                <input
+                  class="custom-tip-input"
+                  type="text"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="number-of-people">
+            <label for="number-of-people__input" class="number-of-people__title"
+              >Number of People</label
+            >
+            <div class="number-of-people__input-with-icon-person">
+              <input
+                class="number-of-people__value number-of"
+                type="text"
+                value="5"
+              />
+              <img
+                class="number-of-people__icon-person"
+                src="./images/icon-person.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card2__second-part">
+          <div class="card2__tip-amount-container">
+            <div class="card2__tip-amount-inner text">
+              <p class="card2__title">Tip Amount</p>
+              <p class="card2__sub-title">/ person</p>
+            </div>
+            <div class="card2__tip-amount-value">$4.27</div>
+          </div>
+
+          <div class="card2__total">
+            <div class="card2__total-inner">
+              <p class="card2__title">Total</p>
+              <p class="card2__sub-title">/ person</p>
+            </div>
+            <div class="card2__total-value">$32.79</div>
+          </div>
+          <div class="btn-container">
+            <button class="reset-btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

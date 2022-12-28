@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 62.5%; }
+
+body {
+  max-width: 144rem;
+  font-family: "Space Mono";
+  font-weight: 700;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: #c5e4e7; }
+
+.logo-container {
+  width: 8.7rem;
+  margin: 10rem auto; }
+  @media only screen and (max-width: 60em) {
+    .logo-container {
+      margin: 4.5rem auto; } }
+
+.card {
+  display: flex;
+  width: 92rem;
+  height: 48rem;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 2.5rem; }
+  @media only screen and (max-width: 60em) {
+    .card {
+      width: 37.5rem;
+      flex-direction: column;
+      height: 80rem; } }
+  .card__first-part {
+    margin: 4.8rem; }
+    @media only screen and (max-width: 60em) {
+      .card__first-part {
+        margin-top: 2rem; } }
+  .card__bill {
+    font-size: 1.6rem;
+    color: #5e7a7d;
+    margin-bottom: 0.6rem; }
+  .card__input-with-dolar-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: #fff; }
+  .card__bill-input {
+    width: 37rem;
+    height: 4.8rem;
+    text-align: end;
+    border: none;
+    background-color: #f3f9fa;
+    font-size: 2.4rem;
+    color: #00474b;
+    padding-right: 1.7rem; }
+  .card__dolar-icon {
+    position: absolute;
+    margin-left: 1.9rem; }
+
+.select-tip__title {
+  margin-top: 4rem;
+  margin-bottom: 1.6rem;
+  color: #5e7a7d;
+  font-size: 1.6rem; }
+
+.select-tip__inner-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.4rem;
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 60em) {
+    .select-tip__inner-container {
+      grid-template-columns: repeat(2, 1fr); } }
+
+.select-tip__percentage {
+  font-size: 2.4rem;
+  text-align: center;
+  width: 11rem;
+  height: 4.8rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #00474b; }
+  @media only screen and (max-width: 60em) {
+    .select-tip__percentage {
+      width: 14rem; } }
+
+.custom-tip-input {
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #f3f9fa;
+  width: 11rem;
+  height: 4.8rem;
+  border: none; }
+  @media only screen and (max-width: 60em) {
+    .custom-tip-input {
+      width: 14rem; } }
+
+.number-of-people__title {
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  color: #5e7a7d; }
+
+.number-of-people__input-with-icon-person {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: #fff; }
+
+.number-of-people__value {
+  width: 37rem;
+  height: 4.8rem;
+  text-align: end;
+  border: none;
+  background-color: #f3f9fa;
+  font-size: 2.4rem;
+  color: #00474b;
+  padding-right: 1.7rem; }
+
+.number-of-people__icon-person {
+  position: absolute;
+  margin-left: 1.9rem; }
+
+.card2__second-part {
+  background-color: #00474b;
+  width: 41rem;
+  height: 41rem;
+  margin-top: 3.2rem;
+  border-radius: 1.5rem; }
+  @media only screen and (max-width: 60em) {
+    .card2__second-part {
+      margin: 0 auto;
+      width: 33rem;
+      height: 25rem; } }
+
+.card2__tip-amount-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5.6rem 4rem; }
+  @media only screen and (max-width: 60em) {
+    .card2__tip-amount-container {
+      margin-top: 2rem; } }
+
+.card2__title {
+  color: #fff;
+  font-size: 1.6rem; }
+
+.card2__sub-title {
+  font-size: 1.6rem;
+  color: #7f9d9f; }
+
+.card2__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -2rem 4rem 0 4rem; }
+  @media only screen and (max-width: 60em) {
+    .card2__total {
+      margin-top: -5rem; } }
+
+.card2__tip-amount-value {
+  font-size: 4.8rem;
+  color: #26c2ae; }
+  @media only screen and (max-width: 60em) {
+    .card2__tip-amount-value {
+      font-size: 3.2rem; } }
+
+.card2__total-value {
+  font-size: 4.8rem;
+  color: #26c2ae; }
+  @media only screen and (max-width: 60em) {
+    .card2__total-value {
+      font-size: 3.2rem; } }
+
+.active {
+  background: #26c2ae; }
+
+.btn-container {
+  position: relative; }
+
+.reset-btn {
+  font-size: 2rem;
+  position: absolute;
+  width: 33rem;
+  height: 4.8rem;
+  margin: 7rem 4rem 0 4rem;
+  color: #00474b;
+  background-color: #26c2ae;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700; }
+  @media only screen and (max-width: 60em) {
+    .reset-btn {
+      margin: 3rem 2rem 0 2.5rem;
+      width: 28rem; } }
