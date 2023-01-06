@@ -91,6 +91,10 @@ body {
     .select-tip__percentage {
       width: 14rem; } }
 
+.select-tip__percentage:hover {
+  background-color: #9fe8df;
+  cursor: pointer; }
+
 .custom-tip-input {
   font-size: 2.4rem;
   text-align: center;
@@ -103,7 +107,6 @@ body {
       width: 14rem; } }
 
 .number-of-people__title {
-  margin-top: 4rem;
   font-size: 1.6rem;
   color: #5e7a7d; }
 
@@ -200,3 +203,17 @@ body {
     .reset-btn {
       margin: 3rem 2rem 0 2.5rem;
       width: 28rem; } }
+
+.reset-btn:hover {
+  background-color: #9fe8df;
+  cursor: pointer; }
+
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem; }
+
+.hidden {
+  color: red;
+  display: none; }

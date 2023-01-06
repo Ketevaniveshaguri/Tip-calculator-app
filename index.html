@@ -48,7 +48,7 @@
               </div>
               <div class="select-tip__percentage" data-percentage="25">25%</div>
               <div class="select-tip__percentage" data-percentage="50">50%</div>
-              <div class="select-tip__percentage select-tip-custom">
+              <div class="select-tip__percentage select-tip-custom active">
                 <input
                   class="custom-tip-input"
                   type="text"
@@ -58,9 +58,14 @@
             </div>
           </div>
           <div class="number-of-people">
-            <label for="number-of-people__input" class="number-of-people__title"
-              >Number of People</label
-            >
+            <div class="flex-item">
+              <label
+                for="number-of-people__input"
+                class="number-of-people__title"
+                >Number of People</label
+              >
+              <p class="hidden">can't be zero</p>
+            </div>
             <div class="number-of-people__input-with-icon-person">
               <input
                 class="number-of-people__value number-of"
