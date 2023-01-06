@@ -84,13 +84,16 @@ body {
     font-size: 1.6rem;
     color: #5e7a7d;
     margin-bottom: 0.6rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-left: -2.2rem;
+    }
   }
   &__input-with-dolar-icon {
     @include input-icon;
 
     @media only screen and (max-width: $bp-large) {
-      width: 30rem;
-      margin-left: -2rem;
+      width: 28rem;
+      margin-left: -2.2rem;
     }
   }
   &__bill-input {
@@ -107,7 +110,7 @@ body {
     color: #5e7a7d;
     font-size: 1.6rem;
     @media only screen and (max-width: $bp-large) {
-      margin-left: -2rem;
+      margin-left: -2.2rem;
     }
   }
   &__inner-container {
@@ -117,7 +120,7 @@ body {
     margin-bottom: 4rem;
     @media only screen and (max-width: $bp-large) {
       grid-template-columns: repeat(2, 1fr);
-      margin-left: -2rem;
+      margin-left: -2.2rem;
     }
   }
   &__percentage {
@@ -143,7 +146,7 @@ body {
   text-align: center;
   background-color: #f3f9fa;
   width: 11rem;
-  height: 4.8rem;
+  height: 4.89rem;
   border: none;
   @media only screen and (max-width: $bp-large) {
     width: 14rem;
@@ -152,7 +155,7 @@ body {
 
 .number-of-people {
   @media only screen and (max-width: $bp-large) {
-    margin-left: -2rem;
+    margin-left: -2.2rem;
   }
   &__title {
     // margin-top: 4rem;
@@ -163,7 +166,7 @@ body {
   &__input-with-icon-person {
     @include input-icon;
     @media only screen and (max-width: $bp-large) {
-      width: 30rem;
+      width: 28rem;
     }
   }
   &__value {

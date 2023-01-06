@@ -46,6 +46,9 @@ body {
     font-size: 1.6rem;
     color: #5e7a7d;
     margin-bottom: 0.6rem; }
+    @media only screen and (max-width: 60em) {
+      .card__bill {
+        margin-left: -2.2rem; } }
   .card__input-with-dolar-icon {
     display: flex;
     align-items: center;
@@ -53,8 +56,8 @@ body {
     border: #fff; }
     @media only screen and (max-width: 60em) {
       .card__input-with-dolar-icon {
-        width: 30rem;
-        margin-left: -2rem; } }
+        width: 28rem;
+        margin-left: -2.2rem; } }
   .card__bill-input {
     width: 37rem;
     height: 4.8rem;
@@ -75,7 +78,7 @@ body {
   font-size: 1.6rem; }
   @media only screen and (max-width: 60em) {
     .select-tip__title {
-      margin-left: -2rem; } }
+      margin-left: -2.2rem; } }
 
 .select-tip__inner-container {
   display: grid;
@@ -85,7 +88,7 @@ body {
   @media only screen and (max-width: 60em) {
     .select-tip__inner-container {
       grid-template-columns: repeat(2, 1fr);
-      margin-left: -2rem; } }
+      margin-left: -2.2rem; } }
 
 .select-tip__percentage {
   font-size: 2.4rem;
@@ -108,7 +111,7 @@ body {
   text-align: center;
   background-color: #f3f9fa;
   width: 11rem;
-  height: 4.8rem;
+  height: 4.89rem;
   border: none; }
   @media only screen and (max-width: 60em) {
     .custom-tip-input {
@@ -116,7 +119,7 @@ body {
 
 @media only screen and (max-width: 60em) {
   .number-of-people {
-    margin-left: -2rem; } }
+    margin-left: -2.2rem; } }
 
 .number-of-people__title {
   font-size: 1.6rem;
@@ -129,7 +132,7 @@ body {
   border: #fff; }
   @media only screen and (max-width: 60em) {
     .number-of-people__input-with-icon-person {
-      width: 30rem; } }
+      width: 28rem; } }
 
 .number-of-people__value {
   width: 37rem;
