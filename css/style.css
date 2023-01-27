@@ -57,7 +57,10 @@ body {
     @media only screen and (max-width: 60em) {
       .card__input-with-dolar-icon {
         width: 28rem;
-        margin-left: -2.2rem; } }
+        margin-left: -2.2rem;
+        margin-right:2rem;
+      
+      } }
   .card__bill-input {
     width: 37rem;
     height: 4.8rem;
