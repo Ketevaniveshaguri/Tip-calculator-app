@@ -92,7 +92,7 @@ body {
     @include input-icon;
 
     @media only screen and (max-width: $bp-large) {
-      width: 28rem;
+      width: 30rem;
       margin-left: -2.2rem;
     }
   }
@@ -166,7 +166,7 @@ body {
   &__input-with-icon-person {
     @include input-icon;
     @media only screen and (max-width: $bp-large) {
-      width: 28rem;
+      width: 30rem;
     }
   }
   &__value {
@@ -217,14 +217,14 @@ body {
     font-size: 4.8rem;
     color: #26c2ae;
     @media only screen and (max-width: $bp-large) {
-      font-size: 3.2rem;
+      font-size: 3rem;
     }
   }
   &__total-value {
     font-size: 4.8rem;
     color: #26c2ae;
     @media only screen and (max-width: $bp-large) {
-      font-size: 3.2rem;
+      font-size: 3rem;
     }
   }
 }

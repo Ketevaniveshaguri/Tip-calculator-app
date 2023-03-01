@@ -44,16 +44,28 @@ const calculateTip = () => {
   let selectTip = parseInt(
     document.querySelector(".select-tip__percentage.active").dataset.percentage
   );
+  let customTip = parseFloat(custom.value);
+  if (isNaN(customTip) || customTip <= 0) {
+    customTip = 0;
+  }
 
   if (customTipActive) {
-    selectTip = parseFloat(document.querySelector(".custom-tip-input").value);
+    selectTip = customTip;
   }
 
   const totalAmount = parseFloat((selectTip / 100) * billValue).toFixed(2);
   const tipAmount = parseFloat(totalAmount / numberPeople).toFixed(2);
-  const actualTotalAmount = parseFloat(
-    (billValue + parseFloat(totalAmount)) / numberPeople
-  ).toFixed(2);
+  let actualTotalAmount = 0;
+
+  if (billValue > 0 && numberPeople > 0) {
+    if (customTipActive && isNaN(customTip)) {
+      actualTotalAmount = 0;
+    } else {
+      actualTotalAmount = parseFloat(
+        (billValue + parseFloat(totalAmount)) / numberPeople
+      ).toFixed(2);
+    }
+  }
 
   tipInput.innerHTML = `$${tipAmount}`;
   totalInput.innerHTML = `$${actualTotalAmount}`;
@@ -66,3 +78,7 @@ function removeHidden() {
     hidden.classList.remove("hidden");
   }
 }
+
+custom.addEventListener("input", () => {
+  calculateTip();
+});
