@@ -57,6 +57,8 @@ body {
     @media only screen and (max-width: 60em) {
       .card__input-with-dolar-icon {
         width: 30rem;
+        width: 30rem;
+        margin-right: 2rem;
         margin-left: -2.2rem; } }
   .card__bill-input {
     width: 37rem;
@@ -132,7 +134,8 @@ body {
   border: #fff; }
   @media only screen and (max-width: 60em) {
     .number-of-people__input-with-icon-person {
-      width: 30rem; } }
+      width: 30rem;
+      margin-right: 2rem; } }
 
 .number-of-people__value {
   width: 37rem;
@@ -220,7 +223,7 @@ body {
   @media only screen and (max-width: 60em) {
     .reset-btn {
       margin: 3rem 2rem 0 2.5rem;
-      width: 28rem; } }
+      width: 30rem; } }
 
 .reset-btn:hover {
   background-color: #9fe8df;
